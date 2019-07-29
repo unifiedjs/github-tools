@@ -1,0 +1,61 @@
+{
+  "private": true,
+  "name": "github-tools",
+  "version": "0.0.0",
+  "description": "GH tools for unified",
+  "license": "MIT",
+  "keywords": [],
+  "repository": "unifiedjs/github-tools",
+  "bugs": "https://github.com/unifiedjs/github-tools/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
+  ],
+  "main": "index.js",
+  "files": [
+    "lib/",
+    "config/",
+    "index.js"
+  ],
+  "dependencies": {
+    "@octokit/graphql": "^3.0.0",
+    "@octokit/rest": "^16.0.0",
+    "arr-diff": "^4.0.0",
+    "atob": "^2.0.0",
+    "chalk": "^2.0.0",
+    "dlv": "^1.0.0",
+    "mdast-zone": "^3.0.0",
+    "minimatch": "^3.0.0",
+    "p-series": "^2.0.0",
+    "parse-author": "^2.0.0",
+    "trough": "^1.0.0",
+    "unist-builder": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0",
+    "remark-cli": "^7.0.0",
+    "remark-preset-wooorm": "^6.0.0",
+    "xo": "^0.24.0"
+  },
+  "scripts": {
+    "start": "node .",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "test": "npm run format"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
+  },
+  "xo": {
+    "prettier": true
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-wooorm"
+    ]
+  }
+}

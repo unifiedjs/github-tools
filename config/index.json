@@ -1,0 +1,312 @@
+{
+  "collective": "unifiedjs",
+  "structure": [
+    {
+      "name": "emeritus",
+      "description": "Past members of the @:org organization team",
+      "repositories": {
+        "scope": ":org/*",
+        "right": "READ"
+      },
+      "humans": {
+        "member": ":orgTeam/emeritus",
+        "maintainer": ":orgTeam/admin"
+      }
+    },
+    {
+      "name": "members",
+      "description": "The @:org organization team",
+      "repositories": {
+        "scope": ":org/*",
+        "right": "READ"
+      },
+      "humans": {
+        "member": ":orgTeam/!emeritus",
+        "maintainer": ":orgTeam/admin"
+      }
+    },
+    {
+      "name": "mergers",
+      "parent": "members",
+      "description": "@:org members with write rights",
+      "repositories": {
+        "scope": ":org/*",
+        "right": "WRITE"
+      },
+      "humans": {
+        "member": ":orgTeam/write",
+        "maintainer": ":orgTeam/admin"
+      }
+    },
+    {
+      "name": "releasers",
+      "parent": "members",
+      "description": "@:org members with release rights",
+      "repositories": {
+        "scope": ":org/*",
+        "right": "ADMIN"
+      },
+      "humans": {
+        "member": ":orgTeam/admin",
+        "maintainer": ":orgTeam/lead"
+      }
+    },
+    {
+      "name": "moderators",
+      "description": "The @:collective collective moderation team",
+      "repositories": {
+        "scope": ":org/*",
+        "right": "ADMIN"
+      },
+      "humans": {
+        "member": "moderation/!emeritus",
+        "maintainer": ":orgTeam/lead"
+      }
+    },
+    {
+      "name": "core",
+      "description": "The @:collective collective core team",
+      "repositories": {
+        "scope": ":org/*",
+        "right": "ADMIN"
+      },
+      "humans": {
+        "member": "core/!emeritus",
+        "maintainer": ":orgTeam/lead"
+      }
+    }
+  ],
+  "orgs": [
+    "unifiedjs",
+    "remarkjs",
+    "rehypejs",
+    "retextjs",
+    "redotjs",
+    "mdx-js",
+    "micromark",
+    "syntax-tree",
+    "vfile"
+  ],
+  "humans": {
+    "ahmadawais": "Ahmad Awais <me@AhmadAwais.com>",
+    "BarryThePenguin": "Jonathan Haines <jonno.haines@gmail.com>",
+    "ChristianMurphy": "Christian Murphy <christian.murphy.42@gmail.com>",
+    "ChristopherBiscardi": "Christopher Biscardi <chris@christopherbiscardi.com> (https://www.christopherbiscardi.com)",
+    "fazouane-marouane": "Marouane Fazouane <fazouanem3@gmail.com>",
+    "Jarred-Sumner": "Jarred Sumner <jarred@jarredsumner.com> (https://jarredsumner.com)",
+    "johno": "John Otander <johnotander@gmail.com> (http://johnotander.com)",
+    "jxnblk": "Brent Jackson <jxnblk@gmail.com> (http://jxnblk.com)",
+    "kmck": "Keith McKnight <keith@mcknig.ht>",
+    "komaeda": "Olivia Hugger <liv@fastmail.com>",
+    "mrmrs": "Adam Morse <hi@mrmrs.cc> (https://mrmrs.cc)",
+    "Murderlon": "Merlijn Vos <merlijn@soverin.net>",
+    "rauchg": "Guillermo Rauch <rauchg@gmail.com> (https://rauchg.com)",
+    "RichardLitt": "Richard Littauer <richard@maintainer.io> (https://burntfen.com)",
+    "Rokt33r": "Junyoung Choi <fluke8259@gmail.com> (https://rokt33r.github.io)",
+    "silvenon": "Matija Marohnić <matija.marohnic@gmail.com> (https://silvenon.com)",
+    "sobolevn": "Nikita Sobolev <mail@sobolevn.me>",
+    "ticky": "Jessica Stokes <hello@jessicastokes.net>",
+    "timneutkens": "Tim Neutkens <tim@zeit.co>",
+    "vhf": "Victor Felder <victor@draft.li> (https://draft.li)",
+    "wooorm": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+    "zcei": "Stephan Schneider <stephanschndr@gmail.com>",
+    "zeke": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+    "zeusdeux": "Mudit Ameta <zeusdeux@gmail.com> (https://mudit.xyz)"
+  },
+  "teams": [
+    {
+      "name": "core",
+      "scope": "*/*",
+      "members": {
+        "ChristianMurphy": "admin",
+        "johno": "admin",
+        "Murderlon": "admin",
+        "RichardLitt": "emeritus",
+        "wooorm": "admin",
+        "zcei": "emeritus"
+      }
+    },
+    {
+      "name": "moderation",
+      "scope": "*/*",
+      "members": {
+        "komaeda": "admin",
+        "RichardLitt": "admin"
+      }
+    },
+    {
+      "name": "unified",
+      "scope": "unifiedjs/*",
+      "lead": "wooorm",
+      "members": {
+        "ChristianMurphy": "write",
+        "johno": "write",
+        "Murderlon": "write",
+        "vhf": "emeritus",
+        "wooorm": "admin",
+        "zcei": "emeritus",
+        "zeusdeux": "emeritus"
+      }
+    },
+    {
+      "name": "remark",
+      "scope": "remarkjs/*",
+      "lead": "wooorm",
+      "members": {
+        "BarryThePenguin": "write",
+        "ChristianMurphy": "write",
+        "fazouane-marouane": "write",
+        "johno": "admin",
+        "kmck": "write",
+        "Murderlon": "write",
+        "Rokt33r": "write",
+        "sobolevn": "emeritus",
+        "vhf": "write",
+        "wooorm": "admin",
+        "zeke": "write",
+        "zeusdeux": "emeritus"
+      }
+    },
+    {
+      "name": "rehype",
+      "scope": "rehypejs/*",
+      "lead": "wooorm",
+      "members": {
+        "ChristianMurphy": "write",
+        "johno": "write",
+        "kmck": "write",
+        "Murderlon": "write",
+        "vhf": "emeritus",
+        "wooorm": "admin"
+      }
+    },
+    {
+      "name": "retext",
+      "scope": "retextjs/*",
+      "lead": "wooorm",
+      "members": {
+        "Murderlon": "write",
+        "RichardLitt": "emeritus",
+        "wooorm": "admin"
+      }
+    },
+    {
+      "name": "redot",
+      "scope": "redotjs/*",
+      "lead": "ChristianMurphy",
+      "members": {
+        "ChristianMurphy": "admin",
+        "wooorm": "admin"
+      }
+    },
+    {
+      "name": "micromark",
+      "scope": "micromark/*",
+      "lead": "wooorm",
+      "members": {
+        "fazouane-marouane": "write",
+        "johno": "write",
+        "Murderlon": "write",
+        "vhf": "emeritus",
+        "wooorm": "admin",
+        "zcei": "emeritus",
+        "zeusdeux": "emeritus"
+      }
+    },
+    {
+      "name": "mdx",
+      "scope": "mdx-js/*",
+      "lead": "johno",
+      "members": {
+        "ahmadawais": "emeritus",
+        "ChristopherBiscardi": "write",
+        "Jarred-Sumner": "write",
+        "johno": "admin",
+        "jxnblk": "emeritus",
+        "mrmrs": "emeritus",
+        "rauchg": "emeritus",
+        "silvenon": "admin",
+        "ticky": "emeritus",
+        "timneutkens": "admin",
+        "wooorm": "write",
+        "zcei": "emeritus"
+      }
+    },
+    {
+      "name": "vfile",
+      "scope": "vfile/*",
+      "lead": "wooorm",
+      "members": {
+        "ChristianMurphy": "write",
+        "komaeda": "emeritus",
+        "wooorm": "admin"
+      }
+    },
+    {
+      "name": "syntax tree",
+      "scope": "syntax-tree/*",
+      "lead": "wooorm",
+      "members": {
+        "BarryThePenguin": "write",
+        "ChristianMurphy": "write",
+        "kmck": "write",
+        "Murderlon": "write",
+        "wooorm": "admin"
+      }
+    }
+  ],
+  "collaborators": [
+    {
+      "scope": "rehypejs/rehype-react",
+      "collaborators": {
+        "rhysd": "Linda_pp <lin90162@yahoo.co.jp> (https://rhysd.github.io)"
+      }
+    },
+    {
+      "scope": "remarkjs/gulp-remark",
+      "collaborators": {
+        "denysdovhan": "Denys Dovhan <denysdovhan@gmail.com> (https://denysdovhan.com)"
+      }
+    },
+    {
+      "scope": "remarkjs/remark-embed-images",
+      "collaborators": {
+        "dherges": "David Herges <david@spektrakel.de> (https://spektrakel.de)"
+      }
+    },
+    {
+      "scope": "remarkjs/remark-git-contributors",
+      "collaborators": {
+        "vweevers": "Vincent Weevers <mail@vincentweevers.nl> (http://vincentweevers.nl)"
+      }
+    },
+    {
+      "scope": "remarkjs/remark-react",
+      "collaborators": {
+        "davidtheclark": "David Clark <david.dave.clark@gmail.com>"
+      }
+    },
+    {
+      "scope": "remarkjs/remark-textr",
+      "collaborators": {
+        "denysdovhan": "Denys Dovhan <denysdovhan@gmail.com> (https://denysdovhan.com)"
+      }
+    },
+    {
+      "scope": "vfile/vfile-reporter-pretty",
+      "collaborators": {
+        "sindresorhus": "Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)",
+        "kevva": "Kevin Mårtensson <kevinmartensson@gmail.com>",
+        "SamVerschueren": "Sam Verschueren <sam.verschueren@gmail.com>"
+      }
+    },
+    {
+      "scope": "vfile/vfile-to-eslint",
+      "collaborators": {
+        "sindresorhus": "Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)",
+        "kevva": "Kevin Mårtensson <kevinmartensson@gmail.com>",
+        "SamVerschueren": "Sam Verschueren <sam.verschueren@gmail.com>"
+      }
+    }
+  ]
+}
