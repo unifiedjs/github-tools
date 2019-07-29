@@ -257,6 +257,12 @@
   ],
   "collaborators": [
     {
+      "scope": "unifiedjs/github-tools",
+      "collaborators": {
+        "octocat": "octocat"
+      }
+    },
+    {
       "scope": "rehypejs/rehype-react",
       "collaborators": {
         "rhysd": "Linda_pp <lin90162@yahoo.co.jp> (https://rhysd.github.io)"
