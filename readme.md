@@ -14,4 +14,9 @@ collaborators where needed, and warns about incorrectly configured entities.
 Most of this is hardcoded to work for unified.
 In the future we hope to allow other collectives to use this as well.
 
+These tools work well with our [`npm-tools`][npm-tools].
+The plan is to merge them together in some pluggable way in the future.
+
 [unified]: https://github.com/unifiedjs
+
+[npm-tools]: https://github.com/unifiedjs/npm-tools
