@@ -1,0 +1,64 @@
+# List of extra configuration for GitHub.
+# Currently lists the permissions and repos of extra collaborators.
+permission: WRITE
+outsideCollaborators:
+  - scope: rehypejs/rehype-react
+    collaborators:
+      - name: Linda_pp
+        email: lin90162@yahoo.co.jp
+        url: https://rhysd.github.io
+        github: rhysd
+  - scope: remarkjs/gulp-remark
+    collaborators:
+      - name: Denys Dovhan
+        email: denysdovhan@gmail.com
+        url: https://denysdovhan.com
+        github: denysdovhan
+  - scope: remarkjs/remark-embed-images
+    collaborators:
+      - name: David Herges
+        email: david@spektrakel.de
+        url: https://spektrakel.de
+        github: dherges
+  - scope: remarkjs/remark-git-contributors
+    collaborators:
+      - name: Vincent Weevers
+        email: mail@vincentweevers.nl
+        url: http://vincentweevers.nl
+        github: vweevers
+  - scope: remarkjs/remark-react
+    collaborators:
+      - name: David Clark
+        email: david.dave.clark@gmail.com
+        url: https://davidtheclark.com
+        github: davidtheclark
+  - scope: remarkjs/remark-textr
+    collaborators:
+      - name: Denys Dovhan
+        email: denysdovhan@gmail.com
+        url: https://denysdovhan.com
+        github: denysdovhan
+  - scope: vfile/vfile-reporter-pretty
+    collaborators:
+      - name: Sindre Sorhus
+        email: sindresorhus@gmail.com
+        url: https://sindresorhus.com
+        github: sindresorhus
+      - name: Kevin Mårtensson
+        email: kevinmartensson@gmail.com
+        github: kevva
+      - name: Sam Verschueren
+        email: sam.verschueren@gmail.com
+        github: SamVerschueren
+  - scope: vfile/vfile-to-eslint
+    collaborators:
+      - name: Sindre Sorhus
+        email: sindresorhus@gmail.com
+        url: https://sindresorhus.com
+        github: sindresorhus
+      - name: Kevin Mårtensson
+        email: kevinmartensson@gmail.com
+        github: kevva
+      - name: Sam Verschueren
+        email: sam.verschueren@gmail.com
+        github: SamVerschueren
