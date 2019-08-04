@@ -24,6 +24,7 @@
     "atob": "^2.0.0",
     "chalk": "^2.0.0",
     "dlv": "^1.0.0",
+    "js-yaml": "^3.0.0",
     "mdast-zone": "^3.0.0",
     "minimatch": "^3.0.0",
     "p-series": "^2.0.0",
@@ -39,8 +40,9 @@
   },
   "scripts": {
     "start": "node .",
+    "crawl": "node script/crawl",
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
-    "test": "npm run format"
+    "test": "npm run crawl && npm run format"
   },
   "prettier": {
     "tabWidth": 2,
