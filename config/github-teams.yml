@@ -2,13 +2,13 @@
 - name: emeritus
   description: Past members of the @:org organization team
   scope: :org/*
-  permission: READ
+  permission: TRIAGE
   member: :orgTeam/emeritus
   maintainer: :orgTeam/releaser
 - name: members
   description: The @:org organization team
   scope: :org/*
-  permission: READ
+  permission: TRIAGE
   member: :orgTeam/!emeritus
   maintainer: :orgTeam/releaser
 - name: mergers
@@ -22,7 +22,7 @@
   parent: members
   description: '@:org members with release rights'
   scope: :org/*
-  permission: ADMIN
+  permission: MAINTAIN
   member: :orgTeam/releaser
   maintainer: :orgTeam/lead
 - name: moderators
