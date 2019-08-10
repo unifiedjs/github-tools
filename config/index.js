@@ -12,6 +12,7 @@ exports.teams = load('unified-teams')
 exports.ghOrgs = load('github-organizations')
 exports.ghTeams = load('github-teams')
 exports.ghHumans = load('github-humans')
+exports.ghLabels = load('github-labels')
 
 function load(name) {
   return yaml.safeLoad(fs.readFileSync(path.join('config', name + '.yml')))
