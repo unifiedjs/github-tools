@@ -1,0 +1,156 @@
+# List of labels to remove: we’re not using anything like this anymore.
+remove:
+  - greenkeeper
+  - has pr
+  - needs pr
+  - priority
+  - low priority
+# List of labels to add.
+# Can be groups, as that allows color scaling (or defining a color once)
+# Each label can have a list of `legacy` labels, which are replaced.
+add:
+  - color:
+      from: hsl(212, 97%, 58%)
+      to: hsl(212, 97%, 88%)
+    labels:
+      - name: 📦 area/deps
+        description: This affects dependencies
+        legacy:
+          - dependencies # MDXs old labels
+      - name: 📚 area/docs
+        description: This affects documentation
+        legacy:
+          - docs # MDXs old labels
+      - name: 👀 area/external
+        description: This makes more sense somewhere else
+        legacy:
+          - external # wooorm’s old labels
+          - not in core # wooorm’s old labels
+      - name: 👩‍⚕ area/health
+        description: This affects community
+      - name: 🗄 area/interface
+        description: This affects the public interface
+      - name: 🏡 area/internal
+        description: This affects the hidden internals
+      - name: 🏁 area/perf
+        description: This affects performance
+      - name: 🔒 area/security
+        description: This affects security
+      - name: 🕸️ area/tests
+        description: This affects tests
+        legacy:
+          - reproduction # MDXs
+      - name: 🏗 area/tools
+        description: This affects tooling
+      - name: ☂️ area/types
+        description: This affects typings
+  - color:
+      from: hsl(0, 97%, 58%)
+      to: hsl(0, 97%, 88%)
+    labels:
+      - name: 🌊 blocked/upstream
+        description: This cannot progress before something external happens first
+        legacy:
+          - upstream # MDXs
+      - name: 🗳 blocked/vote
+        description: This cannot progress before voting is complete
+      - name: 🛠 blocked/wip
+        description: This cannot progress yet, it’s being worked on
+  - color:
+      from: hsl(45, 97%, 58%)
+      to: hsl(45, 97%, 88%)
+    labels:
+      - name: 👶 semver/patch
+        description: This is a backwards-compatible fix
+        legacy:
+          - patch # wooorm’s old labels
+      - name: 🧒 semver/minor
+        description: This is backwards-compatible change
+        legacy:
+          - feature # wooorm’s old labels
+          - minor # wooorm’s old labels
+      - name: 🧑 semver/major
+        description: This is a change
+        legacy:
+          - change # wooorm’s old labels
+          - major # wooorm’s old labels
+  - color:
+      from: hsl(300, 97%, 58%)
+      to: hsl(300, 97%, 88%)
+    labels:
+      - name: 🙆 status/confirmed
+        description: 'This is open and confirmed: ready to be worked on'
+        legacy:
+          - rfc accepted # MDXs old labels
+          - investigation # MDXs old labels
+      - name: 🥂 status/merged
+        description: This is done!
+      - name: 🔍 status/open
+        description: This is new!
+      - name: ⛵️ status/released
+        description: This is released
+      - name: 🧘 status/waiting
+        description: This may go somewhere but needs more information
+        legacy:
+          - future # wooorm’s old labels
+          - concept # wooorm’s old labels
+          - awaiting response # MDXs old labels
+      - name: 🚫 status/wontfix
+        description: This is not (enough of) an issue for this project
+        legacy:
+          - wontfix # Default GitHub name
+  - color:
+      from: hsl(160, 97%, 58%)
+      to: hsl(160, 97%, 88%)
+    labels:
+      - name: 📣 type/announcement
+        description: This is meta
+      - name: 💬 type/discussion
+        description: This is a request for comments
+        legacy:
+          - discussion # MDXs labels
+          - rfc # MDXs labels
+      - name: 🙋 type/question
+        description: This does not need any changes
+        legacy:
+          - question # Default GitHub name, wooorm’s old labels, MDXs
+      - name: 🐛 type/bug
+        description: This is a problem
+        legacy:
+          - bug # Default GitHub name, wooorm’s old labels, and MDXs
+      - name: 🦋 type/enhancement
+        description: This is great to have
+        legacy:
+          - enhancement # Default GitHub name, wooorm’s old labels, and MDXs
+  - color:
+      from: hsl(120, 97%, 58%)
+      to: hsl(120, 97%, 88%)
+    labels:
+      - name: 🌐 platform/browser
+        description: This affects browsers
+      - name: 🐧 platform/linux
+        description: This affects Linux
+      - name: 🍏 platform/macos
+        description: This affects macOS
+      - name: 🐢 platform/node
+        description: This affects Node
+      - name: 📎 platform/windows
+        description: This affects Windows
+  - name: good first issue 👋
+    color: black
+    description: This may be a great place to get started!
+    legacy:
+      - good for beginner # wooorm’s old labels
+  - name: help wanted 🙏
+    color: black
+    description: This could use your insight or help
+    legacy:
+      - help # Default GitHub name
+  - name: duplicate 👯
+    color: black
+    description: Déjà vu
+  - name: invalid 🙅
+    color: black
+    description: This cannot be acted upon
+    legacy:
+      - no # wooorm’s old labels
