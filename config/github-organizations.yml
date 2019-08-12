@@ -3,18 +3,18 @@ owner: core/!emeritus
 orgs:
   - github: unifiedjs
     unified: unified
-  - github: remarkjs
-    unified: remark
-  - github: rehypejs
-    unified: rehype
-  - github: retextjs
-    unified: retext
-  - github: redotjs
-    unified: redot
-  - github: mdx-js
-    unified: mdx
-  - github: micromark
-    unified: micromark
+  # - github: remarkjs
+  #   unified: remark
+  # - github: rehypejs
+  #   unified: rehype
+  # - github: retextjs
+  #   unified: retext
+  # - github: redotjs
+  #   unified: redot
+  # - github: mdx-js
+  #   unified: mdx
+  # - github: micromark
+  #   unified: micromark
   - github: syntax-tree
     unified: syntax tree
   - github: vfile
