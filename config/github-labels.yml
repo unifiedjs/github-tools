@@ -28,8 +28,10 @@ add:
           - not in core # wooorm’s old labels
       - name: 🗄 area/interface
         description: This affects the public interface
-      - name: 🏁 area/performance
+      - name: 🏁 area/perf
         description: This affects performance
+        legacy:
+          - area/performance # Prev
       - name: 🔒 area/security
         description: This affects security
       - name: 🕸️ area/tests
