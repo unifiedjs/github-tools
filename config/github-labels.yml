@@ -13,10 +13,11 @@ add:
       from: hsl(212, 97%, 58%)
       to: hsl(212, 97%, 88%)
     labels:
-      - name: 📦 area/dependencies
+      - name: 📦 area/deps
         description: This affects dependencies
         legacy:
           - dependencies # MDXs old labels
+          - area/dependencies # Prev
       - name: 📚 area/docs
         description: This affects documentation
         legacy:
