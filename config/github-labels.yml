@@ -31,6 +31,8 @@ add:
         description: This affects community
       - name: 🗄 area/interface
         description: This affects the public interface
+      - name: 🏡 area/internal
+        description: This affects the hidden internals
       - name: 🏁 area/perf
         description: This affects performance
         legacy:
