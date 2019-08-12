@@ -32,10 +32,11 @@ add:
         description: This affects performance
       - name: 🔒 area/security
         description: This affects security
-      - name: 🕸️ area/test
+      - name: 🕸️ area/tests
         description: This affects tests
         legacy:
           - reproduction # MDXs
+          - area/test # Prev
       - name: 🏗 area/tools
         description: This affects tooling
       - name: ☂️ area/types
