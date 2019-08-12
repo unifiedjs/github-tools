@@ -17,7 +17,6 @@ add:
         description: This affects dependencies
         legacy:
           - dependencies # MDXs old labels
-          - area/dependencies # Prev
       - name: 📚 area/docs
         description: This affects documentation
         legacy:
@@ -35,15 +34,12 @@ add:
         description: This affects the hidden internals
       - name: 🏁 area/perf
         description: This affects performance
-        legacy:
-          - area/performance # Prev
       - name: 🔒 area/security
         description: This affects security
       - name: 🕸️ area/tests
         description: This affects tests
         legacy:
           - reproduction # MDXs
-          - area/test # Prev
       - name: 🏗 area/tools
         description: This affects tooling
       - name: ☂️ area/types
