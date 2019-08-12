@@ -27,6 +27,8 @@ add:
         legacy:
           - external # wooorm’s old labels
           - not in core # wooorm’s old labels
+      - name: 👩‍⚕ area/health
+        description: This affects community
       - name: 🗄 area/interface
         description: This affects the public interface
       - name: 🏁 area/perf
