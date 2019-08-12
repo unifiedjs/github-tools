@@ -23,7 +23,7 @@ add:
         legacy:
           - docs # MDXs old labels
       - name: 👀 area/external
-        description: This affects something outside of the project
+        description: This makes more sense somewhere else
         legacy:
           - external # wooorm’s old labels
           - not in core # wooorm’s old labels
