@@ -21,6 +21,7 @@ add:
         description: This affects documentation
         legacy:
           - docs # MDXs old labels
+          - documentation # Default GitHub name
       - name: 👀 area/external
         description: This makes more sense somewhere else
         legacy:
