@@ -15,18 +15,12 @@ add:
     labels:
       - name: 📦 area/deps
         description: This affects dependencies
-        legacy:
-          - dependencies # MDXs old labels
       - name: 📚 area/docs
         description: This affects documentation
         legacy:
-          - docs # MDXs old labels
           - documentation # Default GitHub name
       - name: 👀 area/external
         description: This makes more sense somewhere else
-        legacy:
-          - external # wooorm’s old labels
-          - not in core # wooorm’s old labels
       - name: 👩‍⚕ area/health
         description: This affects community
       - name: 🗄 area/interface
@@ -63,27 +57,16 @@ add:
     labels:
       - name: 👶 semver/patch
         description: This is a backwards-compatible fix
-        legacy:
-          - patch # wooorm’s old labels
       - name: 🧒 semver/minor
         description: This is backwards-compatible change
-        legacy:
-          - feature # wooorm’s old labels
-          - minor # wooorm’s old labels
       - name: 🧑 semver/major
         description: This is a change
-        legacy:
-          - change # wooorm’s old labels
-          - major # wooorm’s old labels
   - color:
       from: hsl(300, 97%, 58%)
       to: hsl(300, 97%, 88%)
     labels:
       - name: 🙆 status/confirmed
         description: 'This is open and confirmed: ready to be worked on'
-        legacy:
-          - rfc accepted # MDXs old labels
-          - investigation # MDXs old labels
       - name: 🥂 status/merged
         description: This is done!
       - name: 🔍 status/open
@@ -92,10 +75,6 @@ add:
         description: This is released
       - name: 🧘 status/waiting
         description: This may go somewhere but needs more information
-        legacy:
-          - future # wooorm’s old labels
-          - concept # wooorm’s old labels
-          - awaiting response # MDXs old labels
       - name: 🚫 status/wontfix
         description: This is not (enough of) an issue for this project
         legacy:
@@ -114,15 +93,15 @@ add:
       - name: 🙋 type/question
         description: This does not need any changes
         legacy:
-          - question # Default GitHub name, wooorm’s old labels, MDXs
+          - question # Default GitHub name
       - name: 🐛 type/bug
         description: This is a problem
         legacy:
-          - bug # Default GitHub name, wooorm’s old labels, and MDXs
+          - bug # Default GitHub name
       - name: 🦋 type/enhancement
         description: This is great to have
         legacy:
-          - enhancement # Default GitHub name, wooorm’s old labels, and MDXs
+          - enhancement # Default GitHub name
   - color:
       from: hsl(120, 97%, 58%)
       to: hsl(120, 97%, 88%)
@@ -140,8 +119,6 @@ add:
   - name: good first issue 👋
     color: black
     description: This may be a great place to get started!
-    legacy:
-      - good for beginner # wooorm’s old labels
   - name: help wanted 🙏
     color: black
     description: This could use your insight or help
@@ -153,5 +130,3 @@ add:
   - name: invalid 🙅
     color: black
     description: This cannot be acted upon
-    legacy:
-      - no # wooorm’s old labels
