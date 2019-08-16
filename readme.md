@@ -3,7 +3,7 @@
 This projects manages the [unified][] organisations on GitHub:
 
 *   Check org admins: rights, missing, unexpected
-*   Check repos and their collaborators
+*   Check repos, their collaborators, and their labels
 *   Check teams: their description, privacy, and if they exist
 *   Check team members: rights, missing, unexpected
 *   Check team repos
