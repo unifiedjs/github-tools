@@ -62,3 +62,9 @@ outsideCollaborators:
       - name: Sam Verschueren
         email: sam.verschueren@gmail.com
         github: SamVerschueren
+  - scope: mdx-js/awesome
+    collaborators:
+      - name: Travis Fischer
+        email: travis@transitivebullsh.it
+        url: https://transitivebullsh.it
+        github: transitive-bullshit
