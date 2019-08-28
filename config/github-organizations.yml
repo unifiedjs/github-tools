@@ -1,5 +1,5 @@
 # GitHub org config.
-owner: core/!emeritus
+owner: core/maintainer
 orgs:
   - github: unifiedjs
     unified: unified
