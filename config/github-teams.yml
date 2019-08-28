@@ -1,26 +1,34 @@
 # List of GitHub teams.
-- name: emeritus
-  description: Past members of the @:org organization team
-  scope: :org/*
-  permission: TRIAGE
-  member: :orgTeam/emeritus
-  maintainer: :orgTeam/releaser
 - name: members
   description: The @:org organization team
   scope: :org/*
   permission: TRIAGE
-  member: :orgTeam/!emeritus
-  maintainer: :orgTeam/releaser
-- name: mergers
+  member: :orgTeam/member
+  maintainer: :orgTeam/lead
+- name: contributors
   parent: members
-  description: '@:org members with write rights'
+  description: Contributors of the @:org organization team
+  scope: :org/*
+  permission: TRIAGE
+  member: :orgTeam/contributor
+  maintainer: :orgTeam/lead
+- name: maintainers
+  parent: members
+  description: Maintainers of the @:org organization team
+  scope: :org/*
+  permission: WRITE
+  member: :orgTeam/maintainer
+  maintainer: :orgTeam/lead
+- name: mergers
+  parent: maintainers
+  description: '@:org maintainers with write rights'
   scope: :org/*
   permission: WRITE
   member: :orgTeam/merger
-  maintainer: :orgTeam/releaser
+  maintainer: :orgTeam/lead
 - name: releasers
-  parent: members
-  description: '@:org members with release rights'
+  parent: maintainers
+  description: '@:org maintainers with release rights'
   scope: :org/*
   permission: MAINTAIN
   member: :orgTeam/releaser
@@ -29,11 +37,11 @@
   description: The @:collective collective moderation team
   scope: :org/*
   permission: ADMIN
-  member: moderation/!emeritus
+  member: moderation/maintainer
   maintainer: :orgTeam/lead
 - name: core
   description: The @:collective collective core team
   scope: :org/*
   permission: ADMIN
-  member: core/!emeritus
+  member: core/maintainer
   maintainer: :orgTeam/lead
