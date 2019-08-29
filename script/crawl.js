@@ -3,7 +3,7 @@ const path = require('path')
 const https = require('https')
 
 const base =
-  'https://raw.githubusercontent.com/unifiedjs/governance/master/data/'
+  'https://raw.githubusercontent.com/unifiedjs/collective/master/data/'
 const files = ['humans.yml', 'teams.yml']
 
 files.forEach(filename => {
