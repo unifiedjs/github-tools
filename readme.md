@@ -1,6 +1,6 @@
 # GitHub Tools
 
-This projects manages the [unified][] organisations on GitHub:
+This projects manages the [unified][] organizations on GitHub:
 
 *   Check org admins: rights, missing, unexpected
 *   Check repos, their collaborators, and their labels
