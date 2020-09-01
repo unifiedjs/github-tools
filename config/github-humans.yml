@@ -38,6 +38,16 @@ outsideCollaborators:
         email: denysdovhan@gmail.com
         url: https://denysdovhan.com
         github: denysdovhan
+  - scope: remarkjs/vscode-remark
+    collaborators:
+      - name: Asbjørn Ulsberg
+        email: asbjorn@ulsberg.no
+        url: https://asbjor.nu
+        github: asbjornu
+      - name: Denis Malinochkin
+        email: dmalinochkin@outlook.com
+        url: https://mrmlnc.com
+        github: mrmlnc
   - scope: vfile/vfile-reporter-pretty
     collaborators:
       - name: Sindre Sorhus
