@@ -58,6 +58,7 @@
   "xo": {
     "prettier": true,
     "rules": {
+      "no-await-in-loop": "off",
       "unicorn/no-fn-reference-in-iterator": "off",
       "unicorn/no-reduce": "off",
       "unicorn/prefer-number-properties": "off",
