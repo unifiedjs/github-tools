@@ -14,12 +14,6 @@ outsideCollaborators:
         email: denysdovhan@gmail.com
         url: https://denysdovhan.com
         github: denysdovhan
-  - scope: remarkjs/remark-embed-images
-    collaborators:
-      - name: David Herges
-        email: david@spektrakel.de
-        url: https://spektrakel.de
-        github: dherges
   - scope: remarkjs/remark-git-contributors
     collaborators:
       - name: Vincent Weevers
