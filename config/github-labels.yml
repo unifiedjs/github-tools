@@ -10,8 +10,8 @@ remove:
 # Each label can have a list of `legacy` labels, which are replaced.
 add:
   - color:
-      from: hsl(212, 97%, 58%)
-      to: hsl(212, 97%, 88%)
+      from: hsl(212, 97%, 38%)
+      to: hsl(212, 97%, 68%)
     labels:
       - name: 📦 area/deps
         description: This affects dependencies
@@ -44,8 +44,8 @@ add:
       - name: 🕸 area/website
         description: This affects the website
   - color:
-      from: hsl(0, 97%, 58%)
-      to: hsl(0, 97%, 88%)
+      from: hsl(0, 97%, 38%)
+      to: hsl(0, 97%, 68%)
     labels:
       - name: 🌊 blocked/upstream
         description: This cannot progress before something external happens first
@@ -56,8 +56,8 @@ add:
       - name: 🛠 blocked/wip
         description: This cannot progress yet, it’s being worked on
   - color:
-      from: hsl(45, 97%, 58%)
-      to: hsl(45, 97%, 88%)
+      from: hsl(45, 97%, 38%)
+      to: hsl(45, 97%, 68%)
     labels:
       - name: 👶 semver/patch
         description: This is a backwards-compatible fix
@@ -66,8 +66,8 @@ add:
       - name: 🧑 semver/major
         description: This is a change
   - color:
-      from: hsl(300, 97%, 58%)
-      to: hsl(300, 97%, 88%)
+      from: hsl(300, 97%, 38%)
+      to: hsl(300, 97%, 68%)
     labels:
       - name: 🙆 status/confirmed
         description: 'This is open and confirmed: ready to be worked on'
@@ -84,8 +84,8 @@ add:
         legacy:
           - wontfix # Default GitHub name
   - color:
-      from: hsl(160, 97%, 58%)
-      to: hsl(160, 97%, 88%)
+      from: hsl(160, 97%, 38%)
+      to: hsl(160, 97%, 68%)
     labels:
       - name: 📣 type/announcement
         description: This is meta
@@ -107,8 +107,8 @@ add:
         legacy:
           - enhancement # Default GitHub name
   - color:
-      from: hsl(120, 97%, 58%)
-      to: hsl(120, 97%, 88%)
+      from: hsl(120, 97%, 38%)
+      to: hsl(120, 97%, 68%)
     labels:
       - name: 🌐 platform/browser
         description: This affects browsers
