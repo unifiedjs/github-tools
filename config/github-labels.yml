@@ -31,6 +31,8 @@ add:
         description: This affects performance
       - name: 🔒 area/security
         description: This affects security
+      - name: 👶 area/size
+        description: This affects (bundle) size
       - name: 🕸️ area/tests
         description: This affects tests
         legacy:
