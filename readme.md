@@ -17,6 +17,8 @@ In the future we hope to allow other collectives to use this as well.
 These tools work well with our [`npm-tools`][npm-tools].
 The plan is to merge them together in some pluggable way in the future.
 
+P.S. to run this, you need a `GITHUB_TOKEN` in env.
+
 [unified]: https://github.com/unifiedjs
 
 [npm-tools]: https://github.com/unifiedjs/npm-tools
