@@ -11,7 +11,7 @@ remove:
 add:
   - color:
       from: hsl(212, 97%, 38%)
-      to: hsl(212, 97%, 68%)
+      to: hsl(212, 97%, 88%)
     labels:
       - name: 📦 area/deps
         description: This affects dependencies
@@ -45,7 +45,7 @@ add:
         description: This affects the website
   - color:
       from: hsl(0, 97%, 38%)
-      to: hsl(0, 97%, 68%)
+      to: hsl(0, 97%, 88%)
     labels:
       - name: 🌊 blocked/upstream
         description: This cannot progress before something external happens first
@@ -57,7 +57,7 @@ add:
         description: This cannot progress yet, it’s being worked on
   - color:
       from: hsl(45, 97%, 38%)
-      to: hsl(45, 97%, 68%)
+      to: hsl(45, 97%, 88%)
     labels:
       - name: 👶 semver/patch
         description: This is a backwards-compatible fix
@@ -67,7 +67,7 @@ add:
         description: This is a change
   - color:
       from: hsl(300, 97%, 38%)
-      to: hsl(300, 97%, 68%)
+      to: hsl(300, 97%, 88%)
     labels:
       - name: 🙆 status/confirmed
         description: 'This is open and confirmed: ready to be worked on'
@@ -85,7 +85,7 @@ add:
           - wontfix # Default GitHub name
   - color:
       from: hsl(160, 97%, 38%)
-      to: hsl(160, 97%, 68%)
+      to: hsl(160, 97%, 88%)
     labels:
       - name: 📣 type/announcement
         description: This is meta
@@ -108,7 +108,7 @@ add:
           - enhancement # Default GitHub name
   - color:
       from: hsl(120, 97%, 38%)
-      to: hsl(120, 97%, 68%)
+      to: hsl(120, 97%, 88%)
     labels:
       - name: 🌐 platform/browser
         description: This affects browsers
