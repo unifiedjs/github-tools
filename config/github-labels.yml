@@ -39,6 +39,8 @@ add:
         description: This affects tooling
       - name: ☂️ area/types
         description: This affects typings
+      - name: 🕸 area/website
+        description: This affects the website
   - color:
       from: hsl(0, 97%, 58%)
       to: hsl(0, 97%, 88%)
