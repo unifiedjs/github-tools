@@ -134,3 +134,9 @@ add:
   - name: invalid 🙅
     color: black
     description: This cannot be acted upon
+  - name: hacktoberfest
+    color: hsl(30, 99%, 59%)
+    description: Opt-in for hacktoberfest
+  - name: hacktoberfest-accepted
+    color: hsl(30, 99%, 59%)
+    description: Accepted as part of hacktoberfest
