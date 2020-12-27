@@ -1,0 +1,21 @@
+name: main
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '50 7 * * *'
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dcodeIO/setup-node-nvm@master
+        with:
+          node-version: node
+      - run: npm install
+      - run: npm test
+      - run: npm start
+        env:
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}

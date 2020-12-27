@@ -7,7 +7,7 @@ const config = require('./config')
 tools.run(
   {
     // Note: ghToken needs `admin:org` and `repo` scopes.
-    ghToken: process.env.GITHUB_TOKEN,
+    ghToken: process.env.GH_TOKEN || process.env.GITHUB_TOKEN,
     ...config
   },
   done
