@@ -20,14 +20,14 @@
   "dependencies": {
     "@octokit/graphql": "^4.0.0",
     "@octokit/rest": "^18.0.0",
-    "alpha-sort": "^3.0.0",
+    "alpha-sort": "^4.0.0",
     "arr-diff": "^4.0.0",
     "atob": "^2.0.0",
     "chalk": "^4.0.0",
     "d3-color": "^2.0.0",
     "d3-scale": "^3.0.0",
     "dlv": "^1.0.0",
-    "js-yaml": "^3.0.0",
+    "js-yaml": "^4.0.0",
     "mdast-zone": "^4.0.0",
     "minimatch": "^3.0.0",
     "p-series": "^2.0.0",
@@ -39,7 +39,7 @@
     "prettier": "^2.0.0",
     "remark-cli": "^9.0.0",
     "remark-preset-wooorm": "^8.0.0",
-    "xo": "^0.36.0"
+    "xo": "^0.38.0"
   },
   "scripts": {
     "start": "node .",
@@ -59,10 +59,7 @@
     "prettier": true,
     "rules": {
       "no-await-in-loop": "off",
-      "unicorn/no-fn-reference-in-iterator": "off",
-      "unicorn/no-reduce": "off",
-      "unicorn/prefer-number-properties": "off",
-      "unicorn/string-content": "off"
+      "unicorn/no-array-for-each": "off"
     }
   },
   "remarkConfig": {
