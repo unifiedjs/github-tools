@@ -1,18 +1,16 @@
-'use strict'
-
-const fs = require('fs')
-const path = require('path')
-const yaml = require('js-yaml')
+import fs from 'fs'
+import path from 'path'
+import yaml from 'js-yaml'
 
 // Name of the whole collective.
-exports.collective = 'unifiedjs'
+export var collective = 'unifiedjs'
 
-exports.humans = load('unified-humans')
-exports.teams = load('unified-teams')
-exports.ghOrgs = load('github-organizations')
-exports.ghTeams = load('github-teams')
-exports.ghHumans = load('github-humans')
-exports.ghLabels = load('github-labels')
+export var humans = load('unified-humans')
+export var teams = load('unified-teams')
+export var ghOrgs = load('github-organizations')
+export var ghTeams = load('github-teams')
+export var ghHumans = load('github-humans')
+export var ghLabels = load('github-labels')
 
 function load(name) {
   return yaml.load(fs.readFileSync(path.join('config', name + '.yml')))

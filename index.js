@@ -1,8 +1,6 @@
-'use strict'
-
-const chalk = require('chalk')
-const tools = require('./lib')
-const config = require('./config')
+import chalk from 'chalk'
+import {tools} from './lib/index.js'
+import * as config from './config/index.js'
 
 tools.run(
   {
