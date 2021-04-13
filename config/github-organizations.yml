@@ -15,7 +15,9 @@ orgs:
     unified: mdx
   - github: micromark
     unified: micromark
+    labels: next
   - github: syntax-tree
     unified: syntax tree
+    labels: next
   - github: vfile
     unified: vfile

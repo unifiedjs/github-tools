@@ -1,0 +1,172 @@
+# List of labels to remove: we’re not using anything like this anymore.
+remove:
+  - greenkeeper
+  - has pr
+  - needs pr
+  - priority
+  - low priority
+# List of labels to add.
+# Can be groups, as that allows color scaling (or defining a color once)
+# Each label can have a list of `legacy` labels, which are replaced.
+add:
+  - color:
+      from: hsl(212, 97%, 38%)
+      to: hsl(212, 97%, 88%)
+    labels:
+      - name: 📦 area/deps
+        description: This affects dependencies
+      - name: 📚 area/docs
+        description: This affects documentation
+        legacy:
+          - documentation # Default GitHub name
+      - name: 👩‍⚕ area/health
+        description: This affects community
+      - name: 🗄 area/interface
+        description: This affects the public interface
+      - name: 🏡 area/internal
+        description: This affects the hidden internals
+      - name: 🏁 area/perf
+        description: This affects performance
+      - name: 🔒 area/security
+        description: This affects security
+      - name: 👶 area/size
+        description: This affects (bundle) size
+      - name: 🕸️ area/tests
+        description: This affects tests
+        legacy:
+          - reproduction # MDXs
+      - name: 🏗 area/tools
+        description: This affects tooling
+      - name: ☂️ area/types
+        description: This affects typings
+      - name: 🕸 area/website
+        description: This affects the website
+  - color:
+      from: hsl(0, 97%, 38%)
+      to: hsl(0, 97%, 88%)
+    labels:
+      - name: 🌊 blocked/upstream
+        description: This cannot progress before something external happens first
+        legacy:
+          - upstream # MDXs
+      - name: 🗳 blocked/vote
+        description: This cannot progress before voting is complete
+      - name: 🛠 blocked/wip
+        description: This cannot progress yet, it’s being worked on
+  - color:
+      from: hsl(45, 97%, 38%)
+      to: hsl(45, 97%, 88%)
+    labels:
+      - name: 👶 semver/patch
+        description: This is a backwards-compatible fix
+      - name: 🧒 semver/minor
+        description: This is backwards-compatible change
+      - name: 🧑 semver/major
+        description: This is a change
+  - color:
+      from: hsl(160, 97%, 38%)
+      to: hsl(160, 97%, 88%)
+    labels:
+      - name: 📣 type/announcement
+        description: This is meta
+      - name: 💬 type/discussion
+        description: This is a request for comments
+        legacy:
+          - discussion # MDXs labels
+          - rfc # MDXs labels
+      - name: 🐛 type/bug
+        description: This is a problem
+        legacy:
+          - bug # Default GitHub name
+      - name: 🦋 type/enhancement
+        description: This is great to have
+        legacy:
+          - enhancement # Default GitHub name
+  - color:
+      from: hsl(120, 97%, 38%)
+      to: hsl(120, 97%, 88%)
+    labels:
+      - name: 🌐 platform/browser
+        description: This affects browsers
+      - name: 🐧 platform/linux
+        description: This affects Linux
+      - name: 🍏 platform/macos
+        description: This affects macOS
+      - name: 🐢 platform/node
+        description: This affects Node
+      - name: 📎 platform/windows
+        description: This affects Windows
+  - color:
+      from: hsl(300, 97%, 38%)
+      to: hsl(300, 97%, 88%)
+    labels:
+      - name: 👋 phase/new
+        description: Post is being triaged automatically
+      - name: 🤞 phase/open
+        description: Post is being triaged manually
+      - name: 👎 phase/no
+        description: Post cannot or will not be acted on
+      - name: 👍 phase/yes
+        description: Post is accepted and can be worked on
+      - name: 💪 phase/solved
+        description: Post is done
+        legacy:
+          - 🥂 status/merged # Previous
+          - ⛵️ status/released # Previous
+  - color: '#0d1117' # Black
+    labels:
+      - name: 👯 no/duplicate
+        description: Déjà vu
+        legacy:
+          - duplicate 👯 # Previous
+      - name: 👀 no/external
+        description: This makes more sense somewhere else
+        legacy:
+          - 👀 area/external # Previous
+      - name: 🤷 no/invalid
+        description: This cannot be acted upon
+        legacy:
+          - invalid 🙅 # Previous
+      - name: 🙋 no/question
+        description: This does not need any changes
+        legacy:
+          - 🙋 type/question # Previous
+          - question # Default GitHub name
+      - name: 🙅 no/wontfix
+        description: This is not (enough of) an issue for this project
+        legacy:
+          - 🚫 status/wontfix # Previous
+          - wontfix # Default GitHub name
+  - color: '#6f42c2' # Purple
+    labels:
+      - name: 🙆 yes/confirmed
+        description: This is confirmed and ready to be worked on
+        legacy:
+          - 🙆 status/confirmed # Previous
+  - color:
+      from: '#0366d6' # Blue
+      to: '#d803d8' # Pink
+    labels:
+      - name: 🙈 open/multiple
+        description: This seems to be multiple things
+      - name: 🙉 open/needs-info
+        description: This needs some more info
+        legacy:
+          - 🔍 status/open # Previous
+          - 🧘 status/waiting # Previous
+      - name: 🙊 open/needs-repro
+        description: This needs a reproduction
+  - name: good first issue 👋
+    color: '#0d1117' # Black
+    description: This may be a great place to get started!
+  - name: help wanted 🙏
+    color: '#0d1117' # Black
+    description: This could use your insight or help
+    legacy:
+      - help # Default GitHub name
+  - name: hacktoberfest
+    color: hsl(30, 99%, 59%)
+    description: Opt-in for hacktoberfest
+  - name: hacktoberfest-accepted
+    color: hsl(30, 99%, 59%)
+    description: Accepted as part of hacktoberfest

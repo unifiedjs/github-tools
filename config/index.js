@@ -11,6 +11,7 @@ export var ghOrgs = load('github-organizations')
 export var ghTeams = load('github-teams')
 export var ghHumans = load('github-humans')
 export var ghLabels = load('github-labels')
+export var ghLabelsNext = load('github-labels-next')
 
 function load(name) {
   return yaml.load(fs.readFileSync(path.join('config', name + '.yml')))
