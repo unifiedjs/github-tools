@@ -21,3 +21,4 @@ orgs:
     labels: next
   - github: vfile
     unified: vfile
+    labels: next
