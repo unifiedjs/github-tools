@@ -3,6 +3,7 @@ owner: core/maintainer
 orgs:
   - github: unifiedjs
     unified: unified
+    labels: next
   - github: remarkjs
     unified: remark
   - github: rehypejs
