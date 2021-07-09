@@ -3,15 +3,15 @@ import path from 'path'
 import yaml from 'js-yaml'
 
 // Name of the whole collective.
-export var collective = 'unifiedjs'
+export const collective = 'unifiedjs'
 
-export var humans = load('unified-humans')
-export var teams = load('unified-teams')
-export var ghOrgs = load('github-organizations')
-export var ghTeams = load('github-teams')
-export var ghHumans = load('github-humans')
-export var ghLabels = load('github-labels')
-export var ghLabelsNext = load('github-labels-next')
+export const humans = load('unified-humans')
+export const teams = load('unified-teams')
+export const ghOrgs = load('github-organizations')
+export const ghTeams = load('github-teams')
+export const ghHumans = load('github-humans')
+export const ghLabels = load('github-labels')
+export const ghLabelsNext = load('github-labels-next')
 
 function load(name) {
   return yaml.load(fs.readFileSync(path.join('config', name + '.yml')))

@@ -40,12 +40,12 @@
     "prettier": "^2.0.0",
     "remark-cli": "^9.0.0",
     "remark-preset-wooorm": "^8.0.0",
-    "xo": "^0.38.0"
+    "xo": "^0.39.0"
   },
   "scripts": {
     "start": "node .",
     "crawl": "node script/crawl",
-    "format": "remark . -qfo && prettier . --write && xo --fix",
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test": "npm run crawl && npm run format"
   },
   "prettier": {
@@ -59,10 +59,7 @@
   "xo": {
     "prettier": true,
     "rules": {
-      "import/no-mutable-exports": "off",
-      "no-var": "off",
       "no-await-in-loop": "off",
-      "prefer-arrow-callback": "off",
       "unicorn/no-array-for-each": "off"
     }
   },
