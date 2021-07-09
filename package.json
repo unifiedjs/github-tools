@@ -25,16 +25,14 @@
     "arr-diff": "^4.0.0",
     "atob": "^2.0.0",
     "chalk": "^4.0.0",
-    "d3-color": "^2.0.0",
-    "d3-scale": "^3.0.0",
+    "d3-color": "^3.0.0",
+    "d3-scale": "^4.0.0",
     "dlv": "^1.0.0",
     "js-yaml": "^4.0.0",
-    "mdast-zone": "^4.0.0",
     "minimatch": "^3.0.0",
     "p-series": "^2.0.0",
     "parse-author": "^2.0.0",
-    "trough": "^1.0.0",
-    "unist-builder": "^2.0.0"
+    "trough": "^2.0.0"
   },
   "devDependencies": {
     "prettier": "^2.0.0",
