@@ -10,6 +10,7 @@ orgs:
     unified: rehype
   - github: retextjs
     unified: retext
+    labels: next
   - github: redotjs
     unified: redot
   - github: mdx-js
