@@ -8,6 +8,7 @@ orgs:
     unified: remark
   - github: rehypejs
     unified: rehype
+    labels: next
   - github: retextjs
     unified: retext
     labels: next
