@@ -6,6 +6,7 @@ orgs:
     labels: next
   - github: remarkjs
     unified: remark
+    labels: next
   - github: rehypejs
     unified: rehype
     labels: next
