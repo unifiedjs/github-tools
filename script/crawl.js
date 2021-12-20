@@ -1,6 +1,6 @@
-import fs from 'fs'
-import path from 'path'
-import https from 'https'
+import fs from 'node:fs'
+import path from 'node:path'
+import https from 'node:https'
 
 const base = 'https://raw.githubusercontent.com/unifiedjs/collective/HEAD/data/'
 const files = ['humans.yml', 'teams.yml']

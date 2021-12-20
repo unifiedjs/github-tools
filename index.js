@@ -1,3 +1,4 @@
+import process from 'node:process'
 import chalk from 'chalk'
 import {tools} from './lib/index.js'
 import * as config from './config/index.js'
