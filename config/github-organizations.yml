@@ -17,6 +17,7 @@ orgs:
     unified: redot
   - github: mdx-js
     unified: mdx
+    labels: next
   - github: micromark
     unified: micromark
     labels: next
