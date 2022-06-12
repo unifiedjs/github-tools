@@ -1,12 +1,12 @@
-# GitHub Tools
+# GitHub tools
 
 This projects manages the [unified][] organizations on GitHub:
 
-*   Check org admins: rights, missing, unexpected
-*   Check repos, their collaborators, and their labels
-*   Check teams: their description, privacy, and if they exist
-*   Check team members: rights, missing, unexpected
-*   Check team repos
+*   check org admins: rights, missing, unexpected
+*   check repos, their collaborators, and their labels
+*   check teams: their description, privacy, and if they exist
+*   check team members: rights, missing, unexpected
+*   check team repos
 
 These tools automatically add repositories, teams, members, maintainers, and
 collaborators where needed, and warns about incorrectly configured entities.
