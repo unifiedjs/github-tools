@@ -29,7 +29,7 @@
     "d3-scale": "^4.0.0",
     "dlv": "^1.0.0",
     "js-yaml": "^4.0.0",
-    "minimatch": "^3.0.0",
+    "minimatch": "^5.0.0",
     "p-series": "^3.0.0",
     "parse-author": "^2.0.0",
     "trough": "^2.0.0"
@@ -38,7 +38,7 @@
     "prettier": "^2.0.0",
     "remark-cli": "^10.0.0",
     "remark-preset-wooorm": "^9.0.0",
-    "xo": "^0.47.0"
+    "xo": "^0.50.0"
   },
   "scripts": {
     "start": "node .",
