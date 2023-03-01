@@ -50,10 +50,6 @@ outsideCollaborators:
         github: mrmlnc
   - scope: vfile/vfile-reporter-pretty
     collaborators:
-      - name: Sindre Sorhus
-        email: sindresorhus@gmail.com
-        url: https://sindresorhus.com
-        github: sindresorhus
       - name: Kevin Mårtensson
         email: kevinmartensson@gmail.com
         github: kevva
@@ -62,10 +58,6 @@ outsideCollaborators:
         github: SamVerschueren
   - scope: vfile/vfile-to-eslint
     collaborators:
-      - name: Sindre Sorhus
-        email: sindresorhus@gmail.com
-        url: https://sindresorhus.com
-        github: sindresorhus
       - name: Kevin Mårtensson
         email: kevinmartensson@gmail.com
         github: kevva
