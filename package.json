@@ -19,8 +19,8 @@
     "index.js"
   ],
   "dependencies": {
-    "@octokit/graphql": "^4.0.0",
-    "@octokit/rest": "^18.0.0",
+    "@octokit/graphql": "^6.0.0",
+    "@octokit/rest": "^19.0.0",
     "alpha-sort": "^5.0.0",
     "arr-diff": "^4.0.0",
     "atob": "^2.0.0",
@@ -29,7 +29,7 @@
     "d3-scale": "^4.0.0",
     "dlv": "^1.0.0",
     "js-yaml": "^4.0.0",
-    "minimatch": "^5.0.0",
+    "minimatch": "^9.0.0",
     "p-series": "^3.0.0",
     "parse-author": "^2.0.0",
     "trough": "^2.0.0"
