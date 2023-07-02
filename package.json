@@ -49,9 +49,9 @@
     "xo": "^0.54.0"
   },
   "scripts": {
-    "start": "node .",
+    "start": "node --conditions development index.js",
     "build": "tsc --build --clean && tsc --build && type-coverage",
-    "crawl": "node script/crawl",
+    "crawl": "node --conditions development script/crawl.js",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test": "npm run build && npm run crawl && npm run format"
   },
