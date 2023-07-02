@@ -19,8 +19,6 @@ add:
         description: This affects documentation
         legacy:
           - documentation # Default GitHub name
-      - name: 👀 area/external
-        description: This makes more sense somewhere else
       - name: 👩‍⚕ area/health
         description: This affects community
       - name: 🗄 area/interface
@@ -66,24 +64,6 @@ add:
       - name: 🧑 semver/major
         description: This is a change
   - color:
-      from: hsl(300, 97%, 38%)
-      to: hsl(300, 97%, 88%)
-    labels:
-      - name: 🙆 status/confirmed
-        description: 'This is open and confirmed: ready to be worked on'
-      - name: 🥂 status/merged
-        description: This is done!
-      - name: 🔍 status/open
-        description: This is new!
-      - name: ⛵️ status/released
-        description: This is released
-      - name: 🧘 status/waiting
-        description: This may go somewhere but needs more information
-      - name: 🚫 status/wontfix
-        description: This is not (enough of) an issue for this project
-        legacy:
-          - wontfix # Default GitHub name
-  - color:
       from: hsl(160, 97%, 38%)
       to: hsl(160, 97%, 88%)
     labels:
@@ -94,10 +74,6 @@ add:
         legacy:
           - discussion # MDXs labels
           - rfc # MDXs labels
-      - name: 🙋 type/question
-        description: This does not need any changes
-        legacy:
-          - question # Default GitHub name
       - name: 🐛 type/bug
         description: This is a problem
         legacy:
@@ -120,20 +96,74 @@ add:
         description: This affects Node
       - name: 📎 platform/windows
         description: This affects Windows
+  - color:
+      from: hsl(300, 97%, 38%)
+      to: hsl(300, 97%, 88%)
+    labels:
+      - name: 👋 phase/new
+        description: Post is being triaged automatically
+      - name: 🤞 phase/open
+        description: Post is being triaged manually
+      - name: 👎 phase/no
+        description: Post cannot or will not be acted on
+      - name: 👍 phase/yes
+        description: Post is accepted and can be worked on
+      - name: 💪 phase/solved
+        description: Post is done
+        legacy:
+          - 🥂 status/merged # Previous
+          - ⛵️ status/released # Previous
+  - color: '#0d1117' # Black
+    labels:
+      - name: 👯 no/duplicate
+        description: Déjà vu
+        legacy:
+          - duplicate 👯 # Previous
+      - name: 👀 no/external
+        description: This makes more sense somewhere else
+        legacy:
+          - 👀 area/external # Previous
+      - name: 🤷 no/invalid
+        description: This cannot be acted upon
+        legacy:
+          - invalid 🙅 # Previous
+      - name: 🙋 no/question
+        description: This does not need any changes
+        legacy:
+          - 🙋 type/question # Previous
+          - question # Default GitHub name
+      - name: 🙅 no/wontfix
+        description: This is not (enough of) an issue for this project
+        legacy:
+          - 🚫 status/wontfix # Previous
+          - wontfix # Default GitHub name
+  - color: '#6f42c2' # Purple
+    labels:
+      - name: 🙆 yes/confirmed
+        description: This is confirmed and ready to be worked on
+        legacy:
+          - 🙆 status/confirmed # Previous
+  - color:
+      from: '#0366d6' # Blue
+      to: '#d803d8' # Pink
+    labels:
+      - name: 🙈 open/multiple
+        description: This seems to be multiple things
+      - name: 🙉 open/needs-info
+        description: This needs some more info
+        legacy:
+          - 🔍 status/open # Previous
+          - 🧘 status/waiting # Previous
+      - name: 🙊 open/needs-repro
+        description: This needs a reproduction
   - name: good first issue 👋
-    color: black
+    color: '#0d1117' # Black
     description: This may be a great place to get started!
   - name: help wanted 🙏
-    color: black
+    color: '#0d1117' # Black
     description: This could use your insight or help
     legacy:
       - help # Default GitHub name
-  - name: duplicate 👯
-    color: black
-    description: Déjà vu
-  - name: invalid 🙅
-    color: black
-    description: This cannot be acted upon
   - name: hacktoberfest
     color: hsl(30, 99%, 59%)
     description: Opt-in for hacktoberfest

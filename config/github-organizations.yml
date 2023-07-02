@@ -3,27 +3,19 @@ owner: core/maintainer
 orgs:
   - github: unifiedjs
     unified: unified
-    labels: next
   - github: remarkjs
     unified: remark
-    labels: next
   - github: rehypejs
     unified: rehype
-    labels: next
   - github: retextjs
     unified: retext
-    labels: next
   - github: redotjs
     unified: redot
   - github: mdx-js
     unified: mdx
-    labels: next
   - github: micromark
     unified: micromark
-    labels: next
   - github: syntax-tree
     unified: syntax tree
-    labels: next
   - github: vfile
     unified: vfile
-    labels: next

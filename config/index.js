@@ -10,7 +10,6 @@ export const ghOrgs = load('github-organizations')
 export const ghTeams = load('github-teams')
 export const ghHumans = load('github-humans')
 export const ghLabels = load('github-labels')
-export const ghLabelsNext = load('github-labels-next')
 
 /**
  *
