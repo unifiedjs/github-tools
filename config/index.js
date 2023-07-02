@@ -1,5 +1,4 @@
 import fs from 'node:fs'
-import path from 'node:path'
 import yaml from 'js-yaml'
 
 // Name of the whole collective.
@@ -16,9 +15,10 @@ export const ghLabelsNext = load('github-labels-next')
 /**
  *
  * @param {string} name
- * @returns
+ * @returns {unknown}
  */
 function load(name) {
-  const doc = String(fs.readFileSync(path.join('config', name + '.yml')))
+  const url = new URL(name + '.yml', import.meta.url)
+  const doc = String(fs.readFileSync(url))
   return yaml.load(doc)
 }
