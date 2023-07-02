@@ -12,6 +12,10 @@ tools.run(
   done
 )
 
+/**
+ * @param {Error} error
+ * @returns {undefined}
+ */
 function done(error) {
   if (error) {
     console.log(chalk.red('✖') + ' error')

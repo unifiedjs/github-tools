@@ -13,6 +13,12 @@ export const ghHumans = load('github-humans')
 export const ghLabels = load('github-labels')
 export const ghLabelsNext = load('github-labels-next')
 
+/**
+ *
+ * @param {string} name
+ * @returns
+ */
 function load(name) {
-  return yaml.load(fs.readFileSync(path.join('config', name + '.yml')))
+  const doc = String(fs.readFileSync(path.join('config', name + '.yml')))
+  return yaml.load(doc)
 }
