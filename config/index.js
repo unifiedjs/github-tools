@@ -1,4 +1,5 @@
 import fs from 'node:fs'
+// @ts-expect-error: to do: switch.
 import yaml from 'js-yaml'
 
 // Name of the whole collective.
@@ -18,6 +19,6 @@ export const ghLabels = load('github-labels')
  */
 function load(name) {
   const url = new URL(name + '.yml', import.meta.url)
-  const doc = String(fs.readFileSync(url))
-  return yaml.load(doc)
+  const document = String(fs.readFileSync(url))
+  return yaml.load(document)
 }
