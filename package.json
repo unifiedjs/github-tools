@@ -1,22 +1,8 @@
 {
-  "private": true,
-  "name": "github-tools",
-  "version": "0.0.0",
-  "description": "GH tools for unified",
-  "license": "MIT",
-  "keywords": [],
-  "repository": "unifiedjs/github-tools",
-  "bugs": "https://github.com/unifiedjs/github-tools/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "bugs": "https://github.com/unifiedjs/github-tools/issues",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
-  ],
-  "type": "module",
-  "main": "index.js",
-  "files": [
-    "lib/",
-    "config/",
-    "index.js"
   ],
   "dependencies": {
     "@octokit/graphql": "^9.0.0",
@@ -35,6 +21,7 @@
     "parse-author": "^2.0.0",
     "trough": "^2.0.0"
   },
+  "description": "GH tools for unified",
   "devDependencies": {
     "@types/arr-diff": "^4.0.0",
     "@types/atob": "^2.0.0",
@@ -48,13 +35,17 @@
     "typescript": "^5.0.0",
     "xo": "^1.0.0"
   },
-  "scripts": {
-    "start": "node --conditions development index.js",
-    "build": "tsc --build --clean && tsc --build && type-coverage",
-    "crawl": "node --conditions development script/crawl.js",
-    "format": "remark . -qfo && prettier . -w --log-level warn && xo --fix",
-    "test": "npm run build && npm run crawl && npm run format"
-  },
+  "exports": "./index.js",
+  "files": [
+    "lib/",
+    "config/",
+    "index.d.ts.map",
+    "index.d.ts",
+    "index.js"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "name": "github-tools",
   "prettier": {
     "bracketSpacing": false,
     "semi": false,
@@ -63,15 +54,24 @@
     "trailingComma": "none",
     "useTabs": false
   },
+  "private": true,
   "remarkConfig": {
     "plugins": [
       "remark-preset-wooorm"
     ]
   },
+  "repository": "unifiedjs/github-tools",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build && type-coverage",
+    "crawl": "node --conditions development script/crawl.js",
+    "format": "remark --frail --output --quiet -- . && prettier --log-level warn --write -- . && xo --fix",
+    "start": "node --conditions development index.js",
+    "test": "npm run build && npm run crawl && npm run format"
+  },
   "typeCoverage": {
     "atLeast": 100,
-    "detail": true,
-    "ignoreCatch": true,
     "strict": true
-  }
+  },
+  "type": "module",
+  "version": "0.0.0"
 }
