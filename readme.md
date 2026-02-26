@@ -19,6 +19,6 @@ The plan is to merge them together in some pluggable way in the future.
 
 P.S. to run this, you need a `GH_TOKEN` or `GITHUB_TOKEN` in env.
 
-[unified]: https://github.com/unifiedjs
-
 [npm-tools]: https://github.com/unifiedjs/npm-tools
+
+[unified]: https://github.com/unifiedjs
