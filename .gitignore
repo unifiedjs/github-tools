@@ -1,8 +1,8 @@
 .DS_Store
-*.d.ts.map
 *.d.ts
 *.log
+*.map
 *.tsbuildinfo
+config/unified*.yml
 node_modules/
 yarn.lock
-config/unified*.yml
